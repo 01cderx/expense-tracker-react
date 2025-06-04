@@ -24,7 +24,7 @@ const IncomeExpenses = () => {
     <div className='inc-exp-container'>
       <div>
         <h4>Income</h4>
-        <p  className=₹{numberWithCommas(income)}</p>
+        <p className='money plus'>₹{numberWithCommas(income)}</p>
       </div>
       <div>
         <h4>Expenses</h4>
