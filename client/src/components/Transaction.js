@@ -8,7 +8,7 @@ export const Transaction = ({transaction}) => {
     const sign = transaction.amount < 0 ? '-' : '+';
   return (
     <li className={transaction.amount < 0 ? 'minus' : 'plus'}>
-        {transaction.txt} <span>{sign}${numberWithCommas(Math.abs(transaction.amount))}</span><button className='delete-btn'onClick={() =>deleteTransaction(transaction._id)} >x</button>
+        {transaction.txt} <span>{sign}₹{numberWithCommas(Math.abs(transaction.amount))}</span><button className='delete-btn'onClick={() =>deleteTransaction(transaction._id)} >x</button>
     </li>
   )
 }
